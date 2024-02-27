@@ -9,6 +9,7 @@ import Popup from "./components/Popup/Popup.jsx";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import WhyChoose from "./components/WhyChoose/WhyChoose.jsx";
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
 
@@ -30,10 +31,14 @@ const App = () => {
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero />
       <Banner />
-      <Services />
-      <About handleOrderPopup={handleOrderPopup} />
+      <WhyChoose />
+      <About />
       <Banner />
       <Footer />
+      <Services />
+      {/* <About handleOrderPopup={handleOrderPopup} /> */}
+      {/* <Banner /> */}
+      {/* <Footer /> */}
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );
